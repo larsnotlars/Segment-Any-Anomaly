@@ -186,7 +186,7 @@ def get_args():
     parser = argparse.ArgumentParser(description='Anomaly detection')
     # data related parameters
     parser.add_argument('--dataset', type=str, default='mvtec',
-                        choices=['mvtec', 'visa_challenge', 'visa_public', 'ksdd2', 'mtd'])
+                        choices=['mvtec', 'visa_challenge', 'visa_public', 'ksdd2', 'mtd','lufthansa'])
     parser.add_argument('--class-name', type=str, default='metal_nut')
     parser.add_argument('--k-shot', type=int, default=0) # no effect... just set it to 0.
 

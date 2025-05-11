@@ -8,6 +8,7 @@ from .mtd import load_mtd, mtd_classes
 from .mvtec import load_mvtec, mvtec_classes
 from .visa_challenge import load_visa_challenge, visa_challenge_classes
 from .visa_public import load_visa_public, visa_public_classes
+from .lufthansa import load_lufthansa,lufthansa_classes
 
 mean_train = [0.48145466, 0.4578275, 0.40821073]
 std_train = [0.26862954, 0.26130258, 0.27577711]
@@ -18,7 +19,7 @@ load_function_dict = {
     'visa_public': load_visa_public,
     'ksdd2': load_ksdd2,
     'mtd': load_mtd,
-
+    'lufthansa' : load_lufthansa,
 }
 
 dataset_classes = {
@@ -27,6 +28,7 @@ dataset_classes = {
     'visa_public': visa_public_classes,
     'ksdd2': ksdd2_classes,
     'mtd': mtd_classes,
+    'lufthansa':lufthansa_classes
 }
 
 

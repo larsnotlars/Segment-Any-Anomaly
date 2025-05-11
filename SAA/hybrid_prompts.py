@@ -3,7 +3,7 @@ from .prompts import visa_parameters
 from .prompts import mvtec_parameters
 from .prompts import ksdd2_parameters
 from .prompts import mtd_parameters
-
+from .prompts import lufthansa_parameters
 
 manul_prompts = {
     'visa_public': visa_parameters.manual_prompts,
@@ -11,7 +11,7 @@ manul_prompts = {
     'mvtec': mvtec_parameters.manual_prompts,
     'ksdd2': ksdd2_parameters.manual_prompts,
     'mtd': mtd_parameters.manual_prompts,
-
+    'lufthansa' : lufthansa_parameters.manual_prompts
 }
 
 property_prompts = {
@@ -20,4 +20,5 @@ property_prompts = {
     'mvtec': mvtec_parameters.property_prompts,
     'ksdd2': ksdd2_parameters.property_prompts,
     'mtd': mtd_parameters.property_prompts,
+    'lufthansa' : lufthansa_parameters.property_prompts
 }

@@ -34,12 +34,19 @@ class SAADataset(Dataset):
 
         if self.phase == 'train':
 
-            return train_img_tot_paths, \
-                   train_gt_tot_paths, \
-                   train_tot_labels, \
-                   train_tot_types
+            return (
+                train_img_tot_paths,
+                train_gt_tot_paths,
+                train_tot_labels,
+                train_tot_types,
+            )
         else:
-            return test_img_tot_paths, test_gt_tot_paths, test_tot_labels, test_tot_types
+            return (
+                test_img_tot_paths,
+                test_gt_tot_paths,
+                test_tot_labels,
+                test_tot_types,
+            )
 
     def __len__(self):
         return len(self.img_paths)
